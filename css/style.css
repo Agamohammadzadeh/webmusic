@@ -1,0 +1,11 @@
+:root {
+    --main-page-background: #0d0d0f;
+    --main-page-title-color: #fefefe;
+    --main-page-subtitle-color: #8a8b8f;
+    --left-navbar-background: #1a1a1a;
+    --left-navbar-icon-color: #95a5b2;
+    --main-gradient: linear-gradient(#be9eff , #ff82ff);
+    --main-light-pink: #ff70fd; 
+    --main-page-title-font: 'Rubik medium 500';
+    --main-page-subtitle-font: 'Rubik light 300';
+}
