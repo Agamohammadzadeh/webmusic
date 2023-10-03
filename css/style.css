@@ -117,7 +117,7 @@ body {
 }
 
 .left-navbar__icon-container:hover .left-navbar__icon-link i {
-    filter: drop-shadow(0 0 10px #fff);
+    filter: drop-shadow(0 0 6px #fff);
     transition: .3s;
 }
 
