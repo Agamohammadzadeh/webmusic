@@ -1,11 +1,175 @@
+/* ========================> Flaticon <===================*/
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+/* ========================> End Flaticon <=============== */
+/* ========================> Fonts <====================== */
+@import url('htpps://webmusic.amea-tm.ir/css/fonts.css');
+/* ========================> End Fonts <====================*/
 :root {
     --main-page-background: #0d0d0f;
     --main-page-title-color: #fefefe;
     --main-page-subtitle-color: #8a8b8f;
-    --left-navbar-background: #1a1a1a;
+    --left-navbar-background: #222222;
     --left-navbar-icon-color: #95a5b2;
-    --main-gradient: linear-gradient(#be9eff , #ff82ff);
+    --main-gradient: linear-gradient(145deg , #bc9aff 30% , #ff82ff);
     --main-light-pink: #ff70fd; 
     --main-page-title-font: 'Rubik medium 500';
     --main-page-subtitle-font: 'Rubik light 300';
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-page-title-font);
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+/* ====================> Left Navbar <================= */
+
+.left-navbar {
+    width: 6%;
+    height: 98vh;
+    position: fixed;
+    z-index: 95;
+    background-color: var(--left-navbar-background);
+    border-radius: 30px;
+    left: 10px;
+    top: 1vh;
+}
+
+.left-navbar .left-navbar__icons-main-container {
+
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-navbar__logo-container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.left-navbar__logo-background {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: var(--main-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: contrast(130%);
+    cursor: pointer;
+}
+
+.left-navbar__logo-icon i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.left-navbar__icons {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-navbar__icons-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.left-navbar__icon-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    margin: 20px 0;
+}
+
+.left-navbar__icon-container.active .left-navbar__icon-link i {
+    filter: drop-shadow(0 0 6px #fff);
+    transition: .3s;
+}
+
+.left-navbar__icon-container:hover .left-navbar__icon-link i {
+    filter: drop-shadow(0 0 6px #fff);
+    transition: .3s;
+}
+
+.left-navbar__icon-container::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 4px;
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+    background-image: var(--main-gradient);
+    display: block;
+    opacity: 0;
+    transition: .3s;
+}
+
+.left-navbar__icon-container.active::after {
+    display: block;
+    opacity: 1;
+    transition: .3s;
+}
+
+.left-navbar__icon-container:hover::after {
+    display: block;
+    opacity: 1;
+    transition: .3s;
+}
+
+.left-navbar__icon-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--left-navbar-icon-color);
+    padding: 5px;
+}
+
+/* ==================> End Left Navbar <======================== */
+
+/* ==================> Right Section <====================== */
+
+.container .right-container {
+    width: 100%;
+    background-color: var(--main-page-background);
+    height: 100vh;
+    padding-left: 8%;
+}
+
+.container .main-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* =======================> End Right Section <==================== */
